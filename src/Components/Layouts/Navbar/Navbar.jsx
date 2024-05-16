@@ -1,12 +1,11 @@
 import React from 'react'
 
-
-export const Navbar = ({}) => {
+export const Navbar = ({children}) => {
   return (
     <nav>
-        <ul>
-            
-        </ul>
+      <ul>
+        {children}
+      </ul>
     </nav>
   )
 }
