@@ -6,13 +6,22 @@ import { ItemNavbar } from '../UI/ItemNavbar/ItemNavbar';
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-center w-full h-24 bg-violet-600">
-      <Navbar>
-        <ItemNavbar style_a="w-8 text-white text-2x1 font-bold " content="Inicio" />
-        <ItemNavbar style_a="w-32 text-white text-2x1 font-bold " content="Acerca De Mi" />
-        <ItemNavbar style_a="w-max text-white text-2x1 font-bold " content="Portafolio" />
-        <ItemNavbar style_a="w-max text-white text-2x1 font-bold " content="Contact Me" />
-      </Navbar>
-    </header>
+    <div className="bg-black mb-4">
+      <header className="w-full px-4">
+        <div className="flex items-center justify-between h-24">
+          <div className="text-violet-600 text-2xl font-bold">
+            StevenVillegas
+          </div>
+          <Navbar>
+            <ItemNavbar style_a="text-white bg-violet-700 hover:bg-violet-800 text-base font-bold py-2 px-4 rounded" content="Inicio" />
+            <ItemNavbar style_a="text-white bg-violet-700 hover:bg-violet-800 text-base font-bold py-2 px-4 rounded" content="Acerca De Mi" />
+            <ItemNavbar style_a="text-white bg-violet-700 hover:bg-violet-800 text-base font-bold py-2 px-4 rounded" content="Portafolio" />
+            <ItemNavbar style_a="text-white bg-violet-700 hover:bg-violet-800 text-base font-bold py-2 px-4 rounded" content="Contact Me" />
+            <ItemNavbar style_a="text-white bg-violet-700 hover:bg-violet-800 text-base font-bold py-2 px-4 rounded" content="Rutas Falsas" />
+          </Navbar>
+        </div>
+      </header>
+    </div>
   );
+
 };

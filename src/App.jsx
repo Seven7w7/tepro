@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { Navbar } from './Components/Layouts/Navbar/Navbar';
 import { Header} from './Components/Header/Header';
+
 
 function App() {
   
@@ -14,3 +15,4 @@ function App() {
 }
 
 export default App
+
